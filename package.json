@@ -1,0 +1,23 @@
+{
+  "name": "cucumber-math-test",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de prueba automatizada con **Node.js + Cucumber.js**, basado en BDD.",
+  "main": "index.js",
+  "scripts": {
+  "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marijo-ara/cucumber-math-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marijo-ara/cucumber-math-test/issues"
+  },
+  "homepage": "https://github.com/marijo-ara/cucumber-math-test#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0"
+  }
+}
