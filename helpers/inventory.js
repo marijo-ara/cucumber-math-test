@@ -21,7 +21,7 @@ class Inventory {
       this.carrotQty -= quantity;
     } else if (this.isCucumber(item)) {
       if (this.cucumberQty < quantity) {
-        throw new Error(`Not enough ${item} available. You have ${this.getQuantity(item)}, but you tried to use ${quantity}.`);
+        throw new Error(`Not enough ingredients for a salad! You have ${this.getQuantity('cucumber')} cucumbers, but you need ${quantity} cucumbers.`);
       }
       this.cucumberQty -= quantity;
     }
@@ -29,7 +29,7 @@ class Inventory {
   
   makeSalad(cucumberQty, carrotQty) {
     if (this.cucumberQty < cucumberQty || this.carrotQty < carrotQty) {
-      throw new Error(`Not enough ${item} available. You have ${this.getQuantity(item)}, but you tried to use ${quantity}.`);
+      throw new Error(`Not enough ingredients for a salad! You have ${this.getQuantity('carrot')} carrots, but you need ${carrotQty} carrots.`);
     }
   
     this.cucumberQty -= cucumberQty;
@@ -59,5 +59,5 @@ class Inventory {
   }
 }
   
-export default Inventory; // ✅ Uses `export default` for compatibility with `import`
+export default Inventory; 
   
