@@ -5,3 +5,7 @@ node_modules/
 .env
 package-lock.json
 npm-debug.log
+node_modules/.bin/cucumber-js
+/node_modules
+/node_modules/.bin
+/node_modules
