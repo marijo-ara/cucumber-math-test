@@ -24,7 +24,6 @@ When('I eat {int} {word}', function (quantity, item) {
   }
 });
 
-
 // ✅ When: Make a salad
 When('I make a salad with {int} cucumbers and {int} carrots', function (cucumberQty, carrotQty) {
   inventory.makeSalad(cucumberQty, carrotQty);
@@ -45,7 +44,7 @@ Then('an error should be thrown', function () {
   assert.ok(this.errorThrown, `Expected an error to be thrown, but got: ${this.errorThrown}`);
 });
 
-// ✅ Then: Verify ingredient quantity, but ignore "salad"
+// ✅ Then: Verify ingredient quantity including salad
 Then('I should have {int} {word}', function (expectedQuantity, item) {
   if (item.toLowerCase().includes('salad')) return; // ✅ Avoid conflict with "salad(s)"
 

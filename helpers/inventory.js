@@ -2,7 +2,7 @@ class Inventory {
   constructor() {
     this.carrotQty = 0;
     this.cucumberQty = 0;
-    this.salads = 0;
+    this.saladQty = 0;
   }
   
   setItem(item, quantity) {
@@ -31,10 +31,9 @@ class Inventory {
     if (this.cucumberQty < cucumberQty || this.carrotQty < carrotQty) {
       throw new Error(`Not enough ingredients for a salad! You have ${this.getQuantity('carrot')} carrots, but you need ${carrotQty} carrots.`);
     }
-  
     this.cucumberQty -= cucumberQty;
     this.carrotQty -= carrotQty;
-    this.salads += 1; // ✅ Correctly increments the salad count
+    this.saladQty += 1; // ✅ Correctly increments the salad count
   }
   
   getQuantity(item) {
@@ -45,7 +44,7 @@ class Inventory {
     } else if (this.isCucumber(singularItem)) {
       return this.cucumberQty;
     } else if (singularItem === 'salad') {
-      return this.salads;
+      return this.saladQty;
     }
     return 0;
   }

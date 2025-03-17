@@ -2,7 +2,7 @@
   "name": "cucumber-math-test",
   "version": "1.0.0",
   "type": "module",
-  "description": "Este es un proyecto de prueba automatizada con **Node.js + Cucumber.js**, basado en BDD.",
+  "description": "This is a project for automated tests with **Node.js + Cucumber.js**, based on BDD.",
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/marijo-ara/cucumber-math-test.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maria Araya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marijo-ara/cucumber-math-test/issues"

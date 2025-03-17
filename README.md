@@ -11,7 +11,7 @@ To set up the project, follow these steps:
 
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/marijo-ara/cucumber-math-test.git
+git clone https://github.com/marijo-ara/cucumber-math-test.git
 cd cucumber-math-test
 npm install
 
@@ -35,7 +35,6 @@ To execute the tests, use the following command:
 ```bash
 npm test
 ```
-
 or
 ```bash
 npx cucumber-js
