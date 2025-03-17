@@ -54,5 +54,5 @@ Then('I should have {int} {word}', function (expectedQuantity, item) {
   const expectedItem = expectedQuantity === 1 ? item.replace(/s$/, '') : item;
 
   assert.strictEqual(actualQuantity, expectedQuantity,
-    `Expected ${expectedQuantity} ${expectedItem}, but got ${actualQuantity}`);
+  `Expected ${expectedQuantity} ${expectedItem}, but got ${actualQuantity}`);
 });
